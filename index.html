@@ -5,8 +5,10 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
+		
+		<link rel="icon" type="image/png" href="favicon.png" />
         
-        <title>صفحه اصلی</title>
+        <title>چاپ و تبلیغات شیرین قلم</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -381,18 +383,13 @@
     </div>
     <div class="block col-sm-4">
       <div class="thumbnail border-color2">
-        <img src="example/team_woman1.jpg" alt="team">
         <div class="caption">
           <h4>
 
-لورم ایپسوم یا طرح‌نما</h4>
-          <p>مدیر</p>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+
         </div>
         <p class="team-social">
-          <a class="socialico-facebook" href="#" title="Facebook">#</a>
-          <a class="socialico-flickr" href="#" title="Twitter">#</a>
-          <a class="socialico-linkedin" href="#" title="LinkedIn">#</a>
+         
         </p>
       </div>
     </div>
@@ -400,9 +397,9 @@
       <div class="thumbnail border-color3">
         <img src="example/team_man6.jpg" alt="team">
         <div class="caption">
-          <h4>بهروز امینی</h4>
-          <p>طراح</p>
-          <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+          <h4>سعید تتری</h4>
+          <p>مدیرت دفتر تبلیغات و چاپ</p>
+          <p>تبلیغات (هوشمندانه) هزینه نیست , سرمایه گذاریست</p>
         </div>
         <p class="team-social">
           <a class="socialico-twitter" href="#" title="Twitter">#</a>
@@ -423,7 +420,7 @@
     <div class="row">
       <div class="col-sm-12 text-center">
           <h2 class="block-header">مهارت های ما</h2>
-          <h3>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
+          <h3></h3>
         </div>
       </div>
 
@@ -459,7 +456,7 @@
     <div class="row to_fade">
           <div class="col-sm-12 text-center">
             <h2 class="block-header">مشتریان ما</h2>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+            <p>چاپ و تبلیغات شیرین قلم در طول 10 سال سابقه درخشان , با موسسات و سازمان های بزرگ همکاری موفقی داشته که جلب رضایت مشتریان از ارکان اساسی پیشرفت این مجموعه بوده است</p>
           </div>
         </div>
 
@@ -917,9 +914,9 @@
 <section id="info" class="color_section parallax">
   <div class="container"><div class="row">
       <div class="col-sm-12 text-center">
-        <h5 class="contact-phone to_fade">5465465</h5>
-        <h2 class="contact-email to_fade"><span><a href="mailto:mail@opendoor.com">info@#.ir</a></span></h2>
-        <p class="contact-address to_fade">تهران- شریعتی-خیابان ملک</p>
+        <h5 class="contact-phone to_fade">066-32227049 * 09169605908</h5>
+        <h2 class="contact-email to_fade"><span><a href="shiringhalam3@gmail.com">shiringhalam3@gmail.com</a></span></h2>
+        <p class="contact-address to_fade">آدرس : لرستان - پلدختر - میدان بسیج - چاپ و تبلیغات شیرینی قلم</p>
       </div>
   </div></div>
 </section>
@@ -1049,52 +1046,7 @@
 
          <!-- Map Scripts -->
 
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript">
-          var lat;
-          var lng;
-          var map;
-
-          //type your address after "address="
-          jQuery.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=Northern Arizona 8088 E. State Highway 69&sensor=false', function(data) {
-                lat = data.results[0].geometry.location.lat;
-                lng = data.results[0].geometry.location.lng;
-              }).complete(function(){
-                dxmapLoadMap();
-              });
-
-          function attachSecretMessage(marker, message)
-          {
-            var infowindow = new google.maps.InfoWindow(
-              { content: message
-              });
-            google.maps.event.addListener(marker, 'click', function() {
-              infowindow.open(map,marker);
-            });
-          }
-
-          window.dxmapLoadMap = function()
-          {
-            var center = new google.maps.LatLng(lat, lng);
-            var settings = {
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
-              zoom: 16,
-              draggable: false,
-              scrollwheel: false,
-              center: center
-            };
-            map = new google.maps.Map(document.getElementById('map'), settings);
-
-            var marker = new google.maps.Marker({
-              position: center,
-              title: 'Map title',
-              map: map
-            });
-            marker.setTitle('Map title'.toString());
-            //type your map title and description here
-            attachSecretMessage(marker, '<h3>Map title</h3>Map HTML description');
-          }
-        </script>
+      
         
        
     </body>
